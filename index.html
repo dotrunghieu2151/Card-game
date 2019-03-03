@@ -7,9 +7,62 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link href="style.css" rel="stylesheet" type="text/css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="script.js" type="text/javascript"></script>
+        
     </head>
     <body>
-        
+        <div class="wrapper">
+            <div class="char-header">
+                <p>Strategic Real-time Card game</p>
+                <h2>Pick a class</h2>
+            </div>
+            <div class="char-interface">
+                <a href="#" onclick="gameManager.getCharacters('rogue')">
+                    <img src="image/rogue.jpg" alt="rogue">
+                    <div>
+                        <h3>Rouge</h3>
+                        <p>Rogue - trained killers, melee combat experts. 
+                          They specialize in close distance, dashing out small 
+                          damage but with great agility. However, they have low health and stamina.
+                        </p>
+                    </div>
+                    </a>
+                <a href="#" onclick="gameManager.getCharacters('mage')">
+                    <img src="image/mage.png" alt="mage">
+                    <div>
+                        <h3>Mage</h3>
+                        <p> Scholars of knowledge with insatiable thirst for power. They seek the arcane power of the void
+                            , with great power comes great sacrifice. Their humanity slow descends into darkness.
+                            They have high mana, low health, but they can deal massive damage with their spells, given that they possess sufficient mana.
+                            Their stamina serves little to no purpose.
+                        </p>
+                    </div>
+                </a>
+                <a href="#" onclick="gameManager.getCharacters('hunter')">
+                    <img src="image/hunter.jpg" alt="hunter">
+                    <div>
+                        <h3>Demon Hunters</h3>
+                        <p> Sworn enemies of demons. These warriors have given up their humanity to fight the darkness. 
+                            Inside them lurks the desire for blood and disdain. They are, themselves, corrupted by the power of 
+                            Kuhthama - the god of Death, who granted them the blood of demons. Demon hunters can then transform into 
+                            the abominations they seek to destroy.
+                        </p>
+                    </div>
+                </a>
+                <a href="#" onclick="gameManager.getCharacters('demon')">
+                    <img src="image/demon.jpg" alt="demon">
+                    <div>
+                        <h3>Demons</h3>
+                        <p> Theses unholy creatures rise from the depths of hell with the sole purpose to devour all that is good.
+                            Their power is unmatched, pulling from the darkest depths of Hell itself. They can cast spells and attack with great damage.
+                            Their huge stamina allows them to attack multiple times.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="char-action"></div>
+            <div class="arena"></div>
+            <div class="enemy"></div>
+        </div>
     </body>
+    <script src="script.js" type="text/javascript"></script>
 </html>

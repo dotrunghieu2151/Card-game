@@ -1,1 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+*, *::before, *::after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+    outline:none;
+    color:white;
+}
+a {
+    cursor:default;
+}
+a:hover {
+    cursor: pointer;
+}
+.wrapper {
+    width:80%;
+    margin:auto;
+}
+.char-header {
+    text-align: center;
+    color:white;
+    height:50px;
+}
+.char-header p {
+    margin: 10px auto;
+    font-size: 23px;
+}
+.char-header h2 {
+    font-size:35px;
+    color:#D3B12E;
+    font-family: 'Permanent Marker', cursive;
+}
+body {
+    background:black;
+}
+.char-interface {
+    width:100%;
+    margin-top:100px;
+}
+.char-interface a {
+   margin-top:30px;
+   display:grid;
+   grid-template-columns: 25% 70%;
+    column-gap: 20px;
 
+}
+.char-interface img {
+    width:100%;
+    height:100%;
+    max-width:250px;
+    max-height:250px;
+}
+.char-interface a > div:hover {
+    background: #666666;
+}
+.char-interface a > div > h3 {
+    color:#D3B12E;
+    font-family: 'Permanent Marker', cursive;
+} 
+.char-interface a > div > p {
+    color:white;
+    font-size:15px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.img-avatar {
+    width:250px;
+    height:250px;
+}
+.arena {
+  width: 100%;
+  height: 180px;
+  background-color: #1d373d;
+  background-image: url("img/arena-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35vh;
+  visibility: hidden;
+}
+.btn-prefight {
+  width: 100% !important;
+}
+
+.char-action {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.char-action a {
+  width: 33.33%;
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 14px;
+  font-family: arial;
+  color: #1b1b1b;
+}
+
+.char-action a:nth-of-type(1) {
+  background-color: #e64747;
+}
+
+.char-action a:nth-of-type(2) {
+  background-color: #e6ce47;
+}
+
+.char-action a:nth-of-type(3) {
+  background-color: #6de647;
+}
+
+.char-action a:hover {
+  opacity: 0.9;
+}
+.enemy {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #1b1b1b;
+}
+
+.enemy a {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.enemy img {
+  width: 120px;
+  height: 120px;
+}
+
+.enemy div {
+  width: 220px;
+  padding: 0 10px 0 20px;
+  background-color: #211510;
+}
+
+.enemy a:hover div {
+  background-color: #3c1d3d;
+}
+
+.enemy h3 {
+  font-family: 'Acme', sans-serif;
+  font-size: 22px;
+  color: #f8b700;
+  padding: 12px 0 4px;
+}
+
+.enemy p {
+  font-family: arial;
+  font-size: 12px;
+  color: #d5c8af;
+  line-height: 20px;
+}

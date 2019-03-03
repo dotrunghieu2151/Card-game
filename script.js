@@ -82,8 +82,7 @@
                          getEnemyHealth.innerHTML = `health: ${enemy.health}`;
                     }
                 }
-            }
-            
+            }           
         },
         // player attacks
         playerAttack(){
@@ -182,6 +181,7 @@
                                       <p>Strength: ${player.strength}</p>  
                                       <p>Stamina: ${player.stamina}</p>
                                       <p>Speed: ${player.speed}</p></div>`;
+            getInterface.style.backgroundColor = "#1b1b1b";                                                                
             this.setFight();
         },
         createEnemy(){
